@@ -1,0 +1,66 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="BackNextPage0" TargetType="Button">
+        <Setter Property="Background" Value="#9CABFE"/>
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="48"/>
+        <Setter Property="BorderThickness" Value="5, 5, 5, 5"/>
+        <Setter Property="BorderBrush" Value="#5418B5"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="#2A0A5E"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+    <Style x:Key="Menu0" TargetType="Button">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="Foreground" Value="#13219F"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="BorderBrush" Value="{x:Null}"/>
+        <Setter Property="Background" Value="{x:Null}"/>
+    </Style>
+    <Style x:Key="AuthAndOne0" TargetType="Button">
+        <Setter Property="Height" Value="126"/>
+        <Setter Property="Width" Value="311"/>
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="72"/>
+        <Setter Property="Background" Value="#F4EEFF"/>
+        <Setter Property="Foreground" Value="#424874"/>
+        <Setter Property="BorderBrush" Value="#F4EEFF"/>
+    </Style>
+    <Style x:Key="Arrow0" TargetType="Button">
+        <Setter Property="Background" Value="{x:Null}"/>
+        <Setter Property="Foreground" Value="#4873E2"/>
+        <Setter Property="BorderBrush" Value="#4873E2"/>
+        <Setter Property="FontFamily" Value="Montserrat Black"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="BorderThickness" Value="7 7 7 7"/>
+    </Style>
+    <Style x:Key="TabControl0" TargetType="Button">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="Opacity" Value="0.6"/>
+        <Setter Property="Background" Value="#D2E7FF"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="#2A0A5E"/>
+    </Style>
+    <Style x:Key="Label0" TargetType="Label">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="48"/>
+        <Setter Property="Foreground" Value="#4873E2"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style x:Key="LoginPass0" TargetType="TextBox">
+        <Setter Property="Foreground" Value="#E5E1FF"/>
+        <Setter Property="BorderBrush" Value="#E5E1FF"/>
+        <Setter Property="BorderThickness" Value="4"/>
+    </Style>
+    <Style x:Key="LabelBD0" TargetType="Label">
+        <Setter Property="Background" Value="#D2E7FF"/>
+    </Style>
+    <Style x:Key="BD0" TargetType="DataGrid">
+        <Setter Property="Foreground" Value="#2A0A5E"/>
+        <Setter Property="Background" Value="#D2E7FF"/>
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="24"/>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,15 @@
+{
+  "allDizain": [
+    { "0": [ "Dizain/Screenshot_1.png", "Dizain/Screenshot_2.png", "Dizain/Screenshot_3.png", "Dizain/Screenshot_4.png" ] },
+    { "1": [ "Dizain/FirstWindowSpring.png", "Dizain/AvtorzationSpring.png", "Dizain/DBSpring.png", "Dizain/aboutappSpring.png" ] },
+    { "2": [ "Dizain/FirstWindowSpace.png", "Dizain/AvtorizationSpace.png", "Dizain/BDSpace.png", "Dizain/aboutappSpace.png" ] },
+    { "3": [ "Dizain/FirstWindowLavanda.png", "Dizain/AvtorizationLavanda.png", "Dizain/BDLavanda.png", "Dizain/aboutappLavanda.png" ] },
+    { "4": [ "Dizain/FirstWindowSummer.png", "Dizain/AvtorizationSummer.png", "Dizain/BDSummer.png", "Dizain/aboutappSummer.png" ] },
+    { "5": [ "Dizain/FirstWindowCloud.png", "Dizain/AvtorizationCloud.png", "Dizain/BDCloud.png", "Dizain/aboutappCloud.png" ] },
+    { "6": [ "Dizain/FirstWindowNight.png", "Dizain/AvtorizationNight.png", "Dizain/BDNight.png", "Dizain/aboutappNight.png" ] },
+    { "7": [ "Dizain/FirstWindowSiren.png", "Dizain/AvtorizationSiren.png", "Dizain/BDSiren.png", "Dizain/aboutappSiren.png" ] }
+  ],
+  "load": 1,
+  "login": "",
+  "password":  ""
+}

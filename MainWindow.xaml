@@ -1,0 +1,31 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow" Height="1080" Width="1920"
+        ResizeMode="NoResize"
+        AllowsTransparency="True" WindowStyle="None" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="Dizain/Screenshot_1.png"/>
+    </Window.Background>
+    <StackPanel>
+        <Grid>
+            <Button x:Name="OutApp" Content="Выход" HorizontalAlignment="Left" Margin="584,506,0,0" VerticalAlignment="Top" Style="{StaticResource AuthAndOne0}" Click="OutApp_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="60"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Name="Input" Content="Вход" HorizontalAlignment="Left" Margin="1023,506,0,0" VerticalAlignment="Top" Style="{StaticResource AuthAndOne0}" Click="Input_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="60"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </StackPanel>
+    
+</Window>

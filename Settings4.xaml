@@ -1,0 +1,60 @@
+﻿<Window x:Class="Library.Settings4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Settings4" Height="1080" Width="1920"
+        ResizeMode="NoResize"
+        AllowsTransparency="True" 
+        WindowStyle="None" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="Dizain/Screenshot_4.png"/>
+    </Window.Background>
+    <Grid>
+        <Button Content="О приложении" Margin="26,26,1591,1001" Style="{StaticResource Menu0}" Click="AboutApp_Click"/>
+        <Button Content="О команде" Margin="351,26,1327,1007" Style="{StaticResource Menu0}" Click="Team_Button"/>
+        <Button Content="О котах команды" Margin="615,26,945,1001" Style="{StaticResource Menu0}" Click="CatTeam_Botton"/>
+        <Button Content="Настройки" Margin="996,26,628,995" Style="{StaticResource Menu0}" Click="Settings_Botton"/>
+        <Button Content="Назад" Margin="137,971,0,0" Style="{StaticResource BackNextPage0}" Height="85" Width="334" Click="Back_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="1568,955,0,0" VerticalAlignment="Top" Height="98" Width="112" FontSize="48" Style="{StaticResource Arrow0}" Click="NextPage_click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="100"/>
+                </Style>
+            </Button.Resources>
+            <TextBlock Text="&gt;" FontWeight="Bold" Width="43" FontSize="72"/>
+        </Button>
+        <Image HorizontalAlignment="Center" Height="528" VerticalAlignment="Center" Width="820" Source="./Dizain/FirstWindowLavanda.png"/>
+        <Label Content="Лаванда" HorizontalAlignment="Left" Margin="550,186,0,0" VerticalAlignment="Top" Height="86" Width="864" Style="{StaticResource Label0}"/>
+        <Button x:Name="Choice_Style" Content="Выбрать" Margin="815,969,0,0" Height="84" Width="334" Click="Choice_Style1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="40"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="BackNextPage0"/>
+            </Button.Style>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="1451,955,0,0" VerticalAlignment="Top" Height="98" Width="112" FontSize="48" Click="BackPage_click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="100"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="Arrow0"/>
+            </Button.Style>
+            <TextBlock Text="&lt;" FontWeight="Bold" Width="43" FontSize="72"/>
+        </Button>
+
+    </Grid>
+</Window>

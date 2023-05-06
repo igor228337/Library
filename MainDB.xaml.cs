@@ -68,7 +68,8 @@ namespace Library
                 sqlquere = "SELECT List_of_books.№, List_of_books.Title, Author.Author AS Author, Series.Series AS Series, Genre.Genre AS Genre,\r\n       List_of_books.Publishing_house, List_of_books.Year_of_publication, List_of_books.Number_of_pages, \r\n       Reading_status.Reading_status AS Reading_status,\r\n       List_of_books.Start_date, List_of_books.Final_date\r\nFROM List_of_books\r\nLEFT JOIN Author ON List_of_books.Author = Author.id\r\nLEFT JOIN Series ON List_of_books.Series = Series.id\r\nLEFT JOIN Genre ON List_of_books.Genre = Genre.id\r\nLEFT JOIN Reading_status ON List_of_books.Reading_status = Reading_status.id;";
             }
             WriteDataGrid(sqlquere);
-            
+            CountItems.Content = "Количество: " + CountItemsTable("List_of_books");
+
         }
         private void WriteDataGrid(string cmd)
         {
@@ -831,12 +832,32 @@ namespace Library
             teamLid.Show();
             this.Hide();
         }
-
+        private int CountItemsTable(string table)
+        {
+            int count = 0;
+            using (var connection = new SQLiteConnection(this.NameDB))
+            {
+                connection.Open();
+                string command = $"SELECT Count(*) FROM {table};";
+                SQLiteCommand com = new SQLiteCommand(command, connection);
+                SQLiteDataReader reader = com.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        count = reader.GetInt32(0);
+                    }
+                }
+                connection.Close();
+            }
+            return count;
+        }
         private void ListBooks_Button(object sender, RoutedEventArgs e)
         {
             ClearButton();
             buttonsBD[0].Opacity = 1;
             WriteDataGrid(sqlquere);
+            CountItems.Content = "Количество: " + CountItemsTable("List_of_books");
         }
 
         private void Author_Button(object sender, RoutedEventArgs e)
@@ -844,6 +865,7 @@ namespace Library
             ClearButton();
             buttonsBD[1].Opacity = 1;
             WriteDataGrid(sqlAnother + "Author");
+            CountItems.Content = "Количество: " + CountItemsTable("Author");
         }
 
         private void Series_Button(object sender, RoutedEventArgs e)
@@ -851,6 +873,7 @@ namespace Library
             ClearButton();
             buttonsBD[2].Opacity = 1;
             WriteDataGrid(sqlSeries);
+            CountItems.Content = "Количество: " + CountItemsTable("Series");
         }
 
         private void Genre_Button(object sender, RoutedEventArgs e)
@@ -858,6 +881,7 @@ namespace Library
             ClearButton();
             buttonsBD[3].Opacity = 1;
             WriteDataGrid(sqlAnother + "Genre");
+            CountItems.Content = "Количество: " + CountItemsTable("Genre");
         }
 
         private void ReadingStatus_Button(object sender, RoutedEventArgs e)
@@ -865,6 +889,7 @@ namespace Library
             ClearButton();
             buttonsBD[4].Opacity = 1;
             WriteDataGrid(sqlAnother + "Reading_status");
+            CountItems.Content = "Количество: " + CountItemsTable("Reading_status");
         }
 
         private void Rating_Click(object sender, RoutedEventArgs e)
@@ -874,6 +899,7 @@ namespace Library
                 ClearButton();
                 buttonsBD[5].Opacity = 1;
                 WriteDataGrid(sqlAnother + "Rating");
+                CountItems.Content = "Количество: " + CountItemsTable("Rating");
             }
         }
 

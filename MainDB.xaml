@@ -103,6 +103,7 @@
             </Button>
             <DataGrid PreviewKeyDown="OnPreviewKeyDown" TextBlock.TextAlignment="Justify" AutoGenerateColumns="True" Height="688" HorizontalAlignment="Left" Margin="58,192,0,0" x:Name="MainGrid" VerticalAlignment="Top" Width="1794" SelectionChanged="MainGrid_SelectionChanged" BorderBrush="{x:Null}" Style="{StaticResource BD0}"/>
             <Button Content="Поиск" Margin="1281,26,453,1007" FontFamily="Montserrat"  FontWeight="Bold" Style="{StaticResource Menu0}" Click="Search_Button"/>
+            <Label Name="CountItems" Content="Label" HorizontalAlignment="Left" Margin="1374,951,0,0" VerticalAlignment="Top" Height="70" Width="536" FontSize="48" Foreground="White"/>
         </Grid>
     </StackPanel>
 

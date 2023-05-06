@@ -88,6 +88,8 @@ namespace Library
             ObjectJson objectJson = new ObjectJson();
             objectJson.allDizain = ObjectJsonStatic.allDizain;
             objectJson.load = ObjectJsonStatic.load;
+            objectJson.login = ObjectJsonStatic.login;
+            objectJson.password = ObjectJsonStatic.password;
             var json = JsonConvert.SerializeObject(objectJson);
             File.WriteAllText("jsconfig1.json", json);
             Choice_Style.Opacity = 0.5;

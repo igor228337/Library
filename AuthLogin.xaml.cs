@@ -61,6 +61,8 @@ namespace Library
         {
             if (ObjectJsonStatic.password != Password.Text && ObjectJsonStatic.login != Login.Text)
             {
+                ObjectJsonStatic.login = Login.Text;
+                ObjectJsonStatic.login = Password.Text;
                 ObjectJson objectJson = new ObjectJson();
                 objectJson.allDizain = ObjectJsonStatic.allDizain;
                 objectJson.load = ObjectJsonStatic.load;
